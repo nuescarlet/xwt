@@ -3,7 +3,7 @@
     $(document).ready(function(e) {
         var s = $(document).scrollTop();
         var h = $(document.body).height();
-        var v = -(s-560)*1000/(h-560);
+        var v = -(s-1030)*1000/(h-1030);
         var w = $(document.body).width();
         var limit=(w*1282/1920)-550;
         if(s<100){
@@ -13,7 +13,7 @@
             $(".h-nav").addClass("h-fixed");
             setTimeout("$('.h-nav').addClass('s-fixed')", 105)
         };
-        if(s>=560&&v>=-limit){
+        if(s>=1030&&v>=-limit){
             $(".division").css({"background-position":"0 "+v+"px"})
         }
         $(window).scroll(function(e){
@@ -21,7 +21,7 @@
             h = $(document.body).height();
             w = $(document.body).width();
             limit=(w*1282/1920)-550;
-            v =-(s-560)*1000/(h-560);
+            v =-(s-1030)*1000/(h-1030);
             if(s<100){
                 $(".h-nav").removeClass("h-fixed s-fixed");
                 setTimeout("$('.h-nav').removeClass('s-fixed')", 110)
@@ -31,7 +31,7 @@
             };
             console.log(s);
             console.log(limit);
-            if(s>=560&&v>=-limit){
+            if(s>=1030&&v>=-limit){
                 $(".division").css({"background-position":"0 "+v+"px"})
             }
         })

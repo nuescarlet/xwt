@@ -139,6 +139,7 @@ header {
   top: 0px;
   z-index: 9999;
   box-shadow: 0px 4px 3px #ebebeb;
+  -webkit-transform: translateZ(0);
 }
 .h-fixed .content {
   height: 60px;
@@ -359,7 +360,9 @@ footer .content .copyright p {
   opacity: 1;
 }
 .option-box .box-case > .box:nth-child(3) div {
-  margin: 0 150px;
+  margin: 0 100px;
+  position: relative;
+  left: 100px;
 }
 .option-box .box {
   width: 1200px;
@@ -507,6 +510,8 @@ footer .content .copyright p {
   float: left;
   text-align: right;
   color: #727272;
+  position: relative;
+  height: 424px;
 }
 .bbs .content .left-box .title {
   font-size: 38px;
@@ -515,6 +520,23 @@ footer .content .copyright p {
   margin-top: 26px;
   font-size: 16px;
   line-height: 28px;
+}
+.bbs .content .left-box .button {
+  padding: 6px 14px;
+  font-size: 16px;
+  color: #f27939;
+  border: 1px solid #f27939;
+  border-radius: 8px;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  cursor: pointer;
+  display: block;
+  transition: all .5s ease;
+}
+.bbs .content .left-box .button:hover {
+  color: #fff;
+  background: #f27939;
 }
 .bbs .content .right-box {
   width: 750px;

@@ -143,6 +143,7 @@ header{
   top:0px;
   z-index:9999;
   box-shadow: 0px 4px 3px #ebebeb;
+  -webkit-transform: translateZ(0);
   .content {
     height: 60px;
     .logo {
@@ -378,7 +379,9 @@ footer {
     }
     >.box:nth-child(3){
       div{
-        margin:0 150px;
+        margin:0 100px;
+        position: relative;
+        left:100px;
       }
     }
   }
@@ -531,6 +534,8 @@ footer {
       float: left;
       text-align: right;
       color:#727272;
+      position:relative;
+      height:424px;
       .title{
         font-size: 38px;
       }
@@ -538,6 +543,23 @@ footer {
         margin-top: 26px;
         font-size:16px;
         line-height: 28px;
+      }
+      .button{
+        padding:6px 14px;
+        font-size: 16px;
+        color:@orange;
+        border:1px solid @orange;
+        border-radius: 8px;
+        position:absolute;
+        right:0;
+        bottom:20px;
+        cursor: pointer;
+        display: block;
+        transition: all .5s ease;
+        &:hover{
+          color:#fff;
+          background:@orange;
+        }
       }
     }
     .right-box{
