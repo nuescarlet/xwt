@@ -1,0 +1,354 @@
+//通用
+body {
+  font-family: Arial, Helvetica, "microsoft yahei", sans-serif;
+  color: #666;
+  margin: 0px;
+  font-size: 10px;
+}
+
+ul, p, h1, h2, h3, h4, h5, h6, ol, dl, dd {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section {
+  min-width: 1280px;
+}
+
+//颜色
+@green: #73d196;
+@orange: #f27939;
+//header
+header {
+  display: block;
+  width: 100%;
+  height: 100px;
+  min-width: 1280px;
+}
+
+.h-nav {
+  display: block;
+  width: 100%;
+  height: 100px;
+  .content {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    .logo {
+      width: 188px;
+      height: 68px;
+      float: left;
+      display: block;
+      margin-top: 16px;
+      img {
+        vertical-align: top;
+      }
+    }
+    > ul {
+      display: block;
+      float: left;
+      width: auto;
+      margin-left: 20px;
+      margin-top: 53px;
+      li {
+        height: 16px;
+        line-height: 16px;
+        float: left;
+        display: block;
+        margin-left: 65px;
+        font-size: 16px;
+        color: #2e2e2e;
+      }
+      li.active {
+        a {
+          color: @green;
+        }
+      }
+      li:hover {
+        a {
+          color: @green;
+        }
+      }
+      a {
+        transition: all 0.3s ease;
+      }
+    }
+    .tel {
+      width: 160px;
+      height: 100px;
+      margin-left: 218px;
+      display: block;
+      float: left;
+      p {
+        height: 20px;
+        line-height: 20px;
+        font-size: 20px;
+        color: #aaa;
+        font-family: Helvetica;
+        margin-top: 20px;
+      }
+      > div {
+        margin-top: 13px;
+        margin-left: 46px;
+        text-align: center;
+        a {
+          display: block;
+          float: left;
+          width: 52px;
+          height: 26px;
+          font-size: 16px;
+          line-height: 26px;
+          &:nth-child(1) {
+            background: @orange;
+            border-radius: 4px;
+            color: #fff;
+          }
+          &:nth-child(2) {
+            position: relative;
+            left: 5px;
+            top: 1px;
+            color: #6e6e6e;
+            transition: all 0.3s ease;
+            &:hover {
+              color: @orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.h-fixed {
+  height: 60px;
+  position: fixed;
+  background: #fff;
+  opacity: 0;
+  top: 0px;
+  z-index: 9999;
+  box-shadow: 0px 4px 3px #ebebeb;
+  -webkit-transform: translateZ(0);
+  .content {
+    height: 60px;
+    .logo {
+      height: 56px;
+      margin-top: 2px;
+      img {
+        vertical-align: top;
+        height: 56px;
+      }
+    }
+    > ul {
+      margin-top: 22px;
+    }
+    .tel {
+      height: 60px;
+      p {
+        display: none;
+      }
+      > div {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+.s-fixed {
+  transition: opacity .8s ease;
+  opacity: 1;
+  top: 0px;
+}
+
+//页尾
+footer {
+  width: 100%;
+  height: 330px;
+  background: url(../../img/bg-footer.jpg);
+  background-size: cover;
+  position: relative;
+  min-width: 1280px;
+  .cover {
+    width: 100%;
+    height: 330px;
+    background: #000;
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .content {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 42px 0 58px;
+    position: relative;
+    z-index: 3;
+    li {
+      float: left;
+      .logo {
+        display: block;
+        width: 158px;
+        height: 57px;
+        background: url(../../img/footer_logo.png);
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 14px;
+        color: #fff;
+      }
+      &:nth-child(1) {
+        width: 630px;
+      }
+    }
+    .about {
+      margin-left: 178px;
+      .title {
+        font-size: 26px;
+        margin-bottom: 22px;
+      }
+      a {
+        display: inline-block;
+        font-size: 16px;
+        color: #fff;
+        margin: 0 16px 16px 0;
+      }
+    }
+    .focus {
+      margin-left: 122px;
+      .title {
+        font-size: 16px;
+        margin: 4px 0 27px 0;
+      }
+      > div {
+        span {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          &:nth-child(1) {
+            background: url(../../img/wx.png);
+          }
+          &:nth-child(2) {
+            background: url(../../img/sina.png);
+            margin-left: 7px;
+          }
+        }
+      }
+      .bbs {
+        font-size: 14px;
+        margin-top: 20px;
+        color: #fff;
+        display: block;
+      }
+    }
+    .copyright {
+      border-top: 1px solid #fff;
+      width: 1200px;
+      padding-top: 18px;
+      margin-top: 42-16px;
+      p {
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+//banner
+.banner {
+  img {
+    width: 100%;
+  }
+}
+
+//综合素养
+.quality{
+  width:100%;
+  .content{
+    margin:50px auto;
+    width:1200px;
+    .box-case{
+      margin-bottom:50px;
+      .title{
+        font-size: 38px;
+        color:#2e2e2e;
+        border-left: 6px solid @green;
+        padding-left: 10px;
+        margin-bottom: 20px;
+      }
+      .box{
+        >img{
+          float: left;
+          width:330px;
+          height:461px;
+        }
+        .vadio{
+          border-top:1px solid #ddd;
+          box-sizing: border-box;
+        }
+        a{
+          float: left;
+          display: block;
+          margin: 30px 0 0 30px;
+          width:260px;
+          height:200px;
+          transition: all .5s ease-in-out;
+          &:hover{
+            box-shadow:0 0 8px rgba(0, 0, 0, .6);
+            }
+        }
+        .text{
+          width:260px;
+          height:60px;
+          box-sizing: border-box;
+          padding:6px 10px;
+          p{
+            font-size: 16px;
+            color:#000;
+            margin-top: 6px;
+          }
+          ul{
+            margin-top: 7px;
+            font-size: 10px;
+            color:#7e7e7e;
+            li{
+              &:nth-child(1){
+                float:left;
+                b{
+                  display: inline-block;
+                  width:16px;
+                  height:10px;
+                  background: url(../img/eye.png);
+                  margin-right: 5px;
+                }
+              }
+              &:nth-child(2){
+                float:right
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

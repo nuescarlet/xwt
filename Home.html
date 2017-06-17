@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/logo.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
     <script src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
@@ -20,8 +21,8 @@
                     <li class="active"><a href="">首页</a></li>
                     <li><a href="College/College.html">考好大学</a></li>
                     <li><a href="applyCollege/applyCollege.html">填报志愿</a></li>
-                    <li><a href="">综合素养</a></li>
-                    <li><a href="../Practice/Practice.html">实践活动</a></li>
+                    <li><a href="Quality/Quality.html">综合素养</a></li>
+                    <li><a href="Practice/Practice.html">实践活动</a></li>
                 </ul>
                 <div class="tel">
                     <p>0731-8582-1216</p>
@@ -34,17 +35,23 @@
         </div>
     </header>
     <!--banner-->
-    <section class="banner">
-        <a href=""><img src="img/banner.jpg" alt=""/></a>
-    </section>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <a href="" class="swiper-slide"><img src="College/img/banner.jpg" alt=""/></a>
+            <a href="" class="swiper-slide"><img src="applyCollege/img/banner.jpg" alt=""/></a>
+            <a href="" class="swiper-slide"><img src="Quality/img/banner.jpg" alt=""/></a>
+            <a href="" class="swiper-slide"><img src="Practice/img/banner.jpg" alt=""/></a>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
     <!--学网通-->
     <section class="xwt">
         <img src="img/xwt.jpg" alt=""/>
         <div class="content">
             <span>学网通</span>
-            这里一点点文案。这里一点点文案。这里一点点文案。这里一点点文案。<br/>
-            这里一点点文案。这里一点点文案。这里一点点文案。<br/>
-            这里一点点文案。这里一点点文案。这里一点
+            学网通是国内教育创新型企业，作为教育行业发展的先驱，具有中国至今<br/>
+            为止最具互联网思维和高度创新的互联网学习理念，致力于颠覆中国高中<br/>
+            生传统教育模式，让一切学习变得简单。
             <a href="" class="button">
                 <div></div>
                 <span></span>
@@ -70,21 +77,21 @@
         <div class="content">
             <p>
                 <span>直播课程</span><br/>
-                相信梦想是价值的源泉，相信眼光决定一切，
+                LIVE COURSES
             </p>
             <div class="button animate-shake"><span></span>点击进入</div>
         </div>
         <div class="content">
             <p>
                 <span>热门课程</span><br/>
-                相信梦想是价值的源泉，相信眼光决定一切，
+                MOST POPULAR COURSES
             </p>
             <div class="button animate-shake"><span></span>点击进入</div>
         </div>
         <div class="content">
             <p>
                 <span>知识点诊断</span><br/>
-                相信梦想是价值的源泉，相信眼光决定一切，
+                KNOWLEDGE IN THE DIAGNOSIS
             </p>
             <div class="button animate-shake"><span></span>点击进入</div>
         </div>
@@ -104,21 +111,21 @@
                             <p class="title-sm">驾驭命运的舵是奋斗</p>
                             <p class="text">
                                 相信梦想是价值的源泉，相信眼光决定未来的一切，<br/>
-                                相信成功的信念比成功本身更重要 <br/>
-                                相信人生有挫折没有失败，相信生命的质量来自决不妥协的信念 <br/>
-                                相信梦想是价值的源泉，相信眼光决定未来的一切，
+                                相信成功的信念比成功本身更重要, <br/>
+                                相信人生有挫折没有失败，<br/>
+                                相信生命的质量来自决不妥协的信念。
                             </p>
                             <a href="" class="button">查看更多</a>
                         </li>
                         <li>
-                            <p class="title">全国高考试题</p>
+                            <p class="title">高考试题库</p>
                             <div class="line"></div>
-                            <p class="title-sm">2017年高考试题汇总</p>
+                            <p class="title-sm">好成绩=上课认真听讲+课后勤加练习</p>
                             <p class="text">
-                                <a href="">2017全国I卷</a><a href="">2017全国II卷</a><a href="">2017全国III卷</a><br/>
-                                <a href="">2017北京卷</a><a href="">2017山东卷</a><a href="">2017四川卷</a><br/>
-                                <a href="">2017天津卷</a><a href="">2017江苏卷</a><a href="">2017湖南卷</a><br/>
-                                <a href="">2017浙江卷</a><a href="">2017上海卷</a><a href="">2017湖北卷</a><br/>
+                                让互联网改变学习方式。<br/>
+                                学网通高考试题库收录了全国各年、各省市的高考试题和答案，<br/>
+                                为同学们提供了更新颖、更全面的课后练习资源和学习方式，<br/>
+                                免除了同学们选题、找题的烦恼，提高学习效率。
                             </p>
                             <a href="" class="button">查看更多</a>
                         </li>
@@ -150,17 +157,17 @@
             <div class="option" id="option1">
                 <img src="img/option1.jpg" alt=""/>
                 <p class="title">实践活动</p>
-                <p class="text">社会实践是一种锻炼机会既锻炼了能力，又奉献了大爱心更多学生则出是倾向</p>
+                <p class="text">实践活动是书本知识的应用、拓展、延伸，是一个相对独立的学习生态化空间。在这里，同学们是这个空间的主导者，具有绝对的支配权和主导权，能够以自我和团队为中心推动活动的进行。</p>
             </div>
             <div class="option" id="option2">
                 <img src="img/option2.jpg" alt=""/>
                 <p class="title">实践心得</p>
-                <p class="text">社会实践是一种锻炼机会既锻炼了能力，又奉献了大爱心更多学生则出是倾向</p>
+                <p class="text">有付出才会有收获，在社会服务中可以学到在书本中学不到的知识，它让你开阔视野，了解社会，深入生活，无限回味。更何况参加社会服务活动的过程，阅历本身就是一笔宝贵的财富。</p>
             </div>
             <div class="option" id="option3">
                 <img src="img/option3.jpg" alt=""/>
                 <p class="title">学生心声讲堂</p>
-                <p class="text">社会实践是一种锻炼机会既锻炼了能力，又奉献了大爱心更多学生则出是倾向</p>
+                <p class="text">世界上没有相同的两片树叶，每个人都是一个独立的个体，都有不同的思想 。学生心声讲堂给你一个平台，让我们畅所欲言，说自己想说的话，把不一样的自己展示出来。</p>
             </div>
         </div>
         <div class="right-pic">
@@ -200,5 +207,18 @@
         </div>
     </footer>
     <script src="js/Home.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            loop: true,
+            autoplay : 3000,
+            autoplayDisableOnInteraction : false,
+            speed: 600
+        });
+    </script>
 </body>
 </html>

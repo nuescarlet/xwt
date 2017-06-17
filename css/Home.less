@@ -199,11 +199,13 @@ header{
     font-size: 16px;
     color: #2e2e2e;
     font-weight: 500;
+    line-height:24px;
     span {
       display: block;
       margin-bottom: 20px;
+      line-height:52px;
       color: @green;
-      font-size: 53px;
+      font-size: 52px;
       font-weight: 400;
       letter-spacing: 1px;
     }
@@ -429,10 +431,12 @@ header{
           left: 0px;
           transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
           li {
-            width: 500px;
+            width: 460px;
             height: 300px;
             text-align: center;
             float: left;
+            padding:0 20px;
+
             .title {
               color: @green;
               font-size: 50px;
@@ -663,6 +667,7 @@ header{
       .text {
         font-size: 15px;
         color: #585b5b;
+        line-height: 24px;
       }
       &#option1 {
         top: 10px;
@@ -887,4 +892,19 @@ footer {
       -webkit-animation: 'shake' 1s ease-in-out 0s 1 alternate;
     }
   }
+}
+//swiper
+.swiper-container{
+  width:100%;
+  min-width:1280px;
+}
+.swiper-pagination-bullet-active{
+  background: @green!important;
+  width: 12px!important;
+  height:12px!important;
+}
+.swiper-pagination-bullet{
+  width: 12px!important;
+  height:12px!important;
+  transition: all .5s ease;
 }

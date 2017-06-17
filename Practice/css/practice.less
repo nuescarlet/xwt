@@ -453,27 +453,63 @@ footer {
       margin-top:20px;
       ul{
         float: left;
+        margin-top:40px;
         li{
           float: left;
           &:nth-child(1){
             p{
               font-size: 14px;
-              margin-bottom:56px;
+              padding-bottom:50px;
+              margin-top:4px;
             }
           }
           &:nth-child(2){
-
+            width:91px;
+            height:280px;
+            position: relative;
+            overflow: hidden;
+            background: #dddddd;
+            .cover{
+              width:91px;
+              height:280px;
+              position: absolute;
+              top:0;
+              left:0;
+              z-index: 4;
+              background: url(../img/news-cover.png)
+            }
+            .option{
+              width:91px;
+              height:71px;
+              position:absolute;
+              top:-22px;
+              left:0;
+              background: @green;
+              z-index: 3;
+              transition: all .5s ease-in-out;
+            }
           }
           &:nth-child(3){
-            p{
-              height:72px;
+            a{
+              display: block;
+              width:420px;
+              height:66px;
               font-size: 14px;
               color: #878787;
+              margin-top:4px;
+              transition: all .5s ease-in-out;
+              &:hover{
+                color:@green;
+                span{
+                  color:@green;
+                }
+              }
               span{
                 display: block;
                 font-size: 16px;
-                margin-bottom: 16px;
+                margin-bottom: 14px;
                 color:#000;
+                transition: all .5s ease;
               }
             }
           }
@@ -484,7 +520,98 @@ footer {
         height:376px;
         float: right;
         background: #000;
+        position: relative;
+        video{
+          width:550px;
+          height:376px;
+        }
+        .play{
+          width:100px;
+          height:100px;
+          background: url(../img/play.png);
+          position: absolute;
+          z-index: 10;
+          top:50%;
+          margin-top: -50px;
+          left:50%;
+          margin-left:-50px;
+          display: none;
+          cursor: pointer;
+          &.active{
+            display: block;
+          }
+        }
+        .pause{
+          width:100px;
+          height:100px;
+          background: url(../img/pause.png);
+          position: absolute;
+          z-index: 10;
+          top:50%;
+          margin-top: -50px;
+          left:50%;
+          margin-left:-50px;
+          display: none;
+          cursor: pointer;
+          &:hover{
+            background: url(../img/play.png);
+          }
+          &.active{
+            display: block;
+          }
+        }
       }
+    }
+  }
+}
+//马上报名
+.join{
+  display: block;
+  width:1200px;
+  height:200px;
+  margin:0 auto 50px auto;
+  background-image: url(../img/joinus.jpg);
+  position: relative;
+  overflow: hidden;
+  >p{
+    font-size: 38px;
+    color:#fff;
+    letter-spacing: 2px;
+    position: absolute;
+    top:30px;
+    left:50%;
+    margin-left:-160px;
+    z-index: 5;
+  }
+  >span{
+    display: block;
+    color:#fff;
+    font-size:18px;
+    border:1px solid #fff;
+    border-radius: 6px;
+    position: absolute;
+    bottom:30px;
+    width:120px;
+    height:38px;
+    line-height: 38px;
+    text-align: center;
+    left:50%;
+    margin-left: -60px;
+    z-index: 5;
+  }
+  >i{
+    display: block;
+    width:1200px;
+    height:200px;
+    background: url(../img/ibg.png) repeat center center;
+    position: absolute;
+    z-index: 4;
+    transition: all .75s ease-in-out;
+    &.i1{
+      top:-35px;
+    }
+    &.i2{
+      bottom:-35px;
     }
   }
 }

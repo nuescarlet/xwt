@@ -345,7 +345,7 @@ footer .content .copyright p {
   background: url(../img/tips-orange.png);
 }
 .selection-box .content .box .vadio:hover {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 .selection-box .content .box .vadio .text {
   width: 230px;

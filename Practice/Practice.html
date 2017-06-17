@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../img/logo.ico"/>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/practice.css">
-    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
     <script src="../js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
@@ -21,7 +21,7 @@
                 <li><a href="../Home.html">首页</a></li>
                 <li><a href="../College/College.html">考好大学</a></li>
                 <li><a href="../applyCollege/applyCollege.html">填报志愿</a></li>
-                <li><a href="">综合素养</a></li>
+                <li><a href="../Quality/Quality.html">综合素养</a></li>
                 <li class="active"><a href="../Practice/Practice.html">实践活动</a></li>
             </ul>
             <div class="tel">
@@ -74,7 +74,6 @@
             <a href="" class="swiper-slide"><img src="img/Carousel4.jpg" alt=""/><div class="cover"></div><p>山区支教</p></a>
             <a href="" class="swiper-slide"><img src="img/Carousel5.jpg" alt=""/><div class="cover"></div><p>博物馆</p></a>
         </div>
-        <!-- 如果需要导航按钮 -->
         <div class="left-arr"><div class="arr"></div></div>
         <div class="right-arr"><div class="arr"></div></div>
     </div>
@@ -91,18 +90,35 @@
                     <p>2017-06-12</p>
                     <p>2017-06-12</p>
                 </li>
-                <li></li>
                 <li>
-                    <p><span>新闻标题</span>新闻内容新闻内容新闻内容新闻内容新闻内容</p>
-                    <p><span>新闻标题</span>新闻内容新闻内容新闻内容新闻内容新闻内容</p>
-                    <p><span>新闻标题</span>新闻内容新闻内容新闻内容新闻内容新闻内容</p>
-                    <p><span>新闻标题</span>新闻内容新闻内容新闻内容新闻内容新闻内容</p>
+                    <div class="cover"></div>
+                    <div class="option"></div>
+                </li>
+                <li>
+                    <a href=""><span>新闻标题</span>新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容</a>
+                    <a href=""><span>新闻标题</span>新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容</a>
+                    <a href=""><span>新闻标题</span>新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容</a>
+                    <a href=""><span>新闻标题</span>新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容</a>
                 </li>
             </ul>
-            <video class="vadio" src="http://www.xwt315.com/uploads/temp/1493883415762.mp4" controls="controls">您的浏览器不支持video。</video>
+            <div class="vadio">
+                <video src="http://www.xwt315.com/uploads/temp/1493883415762.mp4" controls="controls" preload="auto">
+                    您的破浏览器都是古董了，早该换了，不然休想看我们的小电影(*´・v・)
+                </video>
+                <div class="play active"></div>
+                <div class="pause"></div>
+            </div>
+
         </div>
     </div>
 </section>
+<!--马上报名-->
+<a href="" class="join">
+    <p>开启你的实践之旅</p>
+    <span href="">马上报名</span>.
+    <i class="i1"></i>
+    <i class="i2"></i>
+</a>
 <!--页尾-->
 <footer>
     <div class="cover"></div>
@@ -136,7 +152,7 @@
     </div>
 </footer>
 <script src="js/practice.js"></script>
-<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script src="../js/swiper-3.4.2.jquery.min.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -147,6 +163,7 @@
         prevButton: '.left-arr',
         loop: true,
         autoplay : 3000,
+        autoplayDisableOnInteraction : false,
         speed: 600
     });
 </script>

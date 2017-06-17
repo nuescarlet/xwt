@@ -36,3 +36,63 @@
         })
     });
 }();
+
+//新闻选择组件
++function(){
+    $(".news .box li:nth-child(3) a").hover(function(){
+        switch($(".news .box li a").index($(this)))
+        {
+            case 0:
+                $(".news .box .option").css({"top":"-22px","height":"71px"});
+                break;
+            case 1:
+                $(".news .box .option").css({"top":"49px","height":"71px"});
+                break;
+            case 2:
+                $(".news .box .option").css({"top":"120px","height":"71px"});
+                break;
+            case 3:
+                $(".news .box .option").css({"top":"191px","height":"104px"});
+                break;
+        }
+    })
+}();
+
+//报名组件
++function(){
+    $(".join").hover(function(){
+        $(".i1").css({"top":"-85px"});
+        $(".i2").css({"bottom":"-85px"});
+    });
+    $(".join").mouseleave(function() {
+        $(".i1").css({"top": "-35px"});
+        $(".i2").css({"bottom": "-35px"});
+    })
+}();
+
+//视频组件
++function(){
+    var start=0;
+    $(".play").click(function(){
+        $(this).removeClass("active").prev().trigger('play');
+        start=1;
+    });
+    $(".pause").click(function(){
+        $(this).removeClass("active").prev().prev().trigger('play');
+    });
+    $("video").click(function(){
+        if($("video")[0].paused==true){
+            $(this).trigger('play');
+            $(this).next().removeClass("active").next().removeClass("active");
+        }else{
+            $(this).trigger('pause');
+            $(this).next().next().addClass("active");
+        }
+    });
+    $("video").on("pause",function(){
+        $(this).next().next().addClass("active");
+    });
+    $("video").on("play",function(){
+        $(this).next().removeClass("active").next().removeClass("active");
+    });
+}();
