@@ -498,6 +498,84 @@ footer .content .copyright p {
   color: #fff;
   line-height: 96px;
 }
+.mentality {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.mentality .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.mentality .content img {
+  float: left;
+}
+.mentality .content .mentality-box {
+  width: 740px;
+  float: right;
+}
+.mentality .content .mentality-box .option {
+  margin: 30px 0 0 30px;
+}
+.mentality .content .mentality-box .option li {
+  width: 88px;
+  height: 26px;
+  line-height: 26px;
+  float: left;
+  box-sizing: border-box;
+  color: #3d3d3d;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 6px 6px 0 0;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+.mentality .content .mentality-box .option li.active {
+  background: #22bf61;
+  color: #fff;
+}
+.mentality .content .mentality-box .box {
+  width: 740px;
+  border-top: 1px solid #c5c5c5;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 30px;
+  height: 293px;
+  position: relative;
+  overflow: hidden;
+}
+.mentality .content .mentality-box .box .box-content {
+  position: absolute;
+  width: 3000px;
+  height: 292px;
+  left: 0px;
+  top: 1px;
+  transition: all 0.75s ease-in-out;
+}
+.mentality .content .mentality-box .box .box-content .bc {
+  width: 740px;
+  height: 293px;
+  box-sizing: border-box;
+  float: left;
+  padding: 9px 0  9px 30px;
+}
+.mentality .content .mentality-box .box a {
+  display: block;
+  height: 28px;
+  width: 98px;
+  color: #f27939;
+  font-size: 16px;
+  text-align: center;
+  line-height: 28px;
+  border: 1px solid #f27939;
+  border-radius: 8px;
+  float: right;
+  margin-top: 30px;
+  transition: all .5s ease;
+}
+.mentality .content .mentality-box .box a:hover {
+  color: #fff;
+  background: #f27939;
+}
 .bbs {
   width: 100%;
   margin: 50px 0 30px 0;

@@ -523,6 +523,85 @@ footer {
     }
   }
 }
+//高考心态
+.mentality{
+  margin-bottom: 50px;
+  width:100%;
+  .content{
+    width:1200px;
+    margin: 0 auto;
+    img{
+      float: left;
+    }
+    .mentality-box{
+      width:740px;
+      float:right;
+      .option{
+        margin:30px 0 0 30px;
+        li{
+          width:88px;
+          height:26px;
+          line-height: 26px;
+          float: left;
+          box-sizing: border-box;
+          color:#3d3d3d;
+          text-align: center;
+          font-size: 18px;
+          border-radius: 6px 6px 0 0;
+          transition: all .5s ease;
+          cursor: pointer;
+          &.active{
+            background: #22bf61;
+            color:#fff;
+          }
+        }
+      }
+      .box{
+        width:740px;
+        border-top: 1px solid #c5c5c5;
+        color:#3d3d3d;
+        font-size: 16px;
+        line-height: 30px;
+        height:293px;
+        position: relative;
+        overflow: hidden;
+        .box-content{
+          position:absolute;
+          width:3000px;
+          height:292px;
+          left:0px;
+          top:1px;
+          transition: all .75s ease-in-out;
+          .bc{
+            width:740px;
+            height:293px;
+            box-sizing: border-box;
+            float: left;
+            padding:9px 0  9px 30px;
+          }
+        }
+        a{
+          display: block;
+          height:28px;
+          width:98px;
+          color:@orange;
+          font-size: 16px;
+          text-align: center;
+          line-height: 28px;
+          border:1px solid @orange;
+          border-radius: 8px;
+          float: right;
+          margin-top: 30px;
+          transition: all .5s ease;
+          &:hover{
+            color:#fff;
+            background: @orange;
+          }
+        }
+      }
+    }
+  }
+}
 //填报技巧
 .bbs{
   width:100%;

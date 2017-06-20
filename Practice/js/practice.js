@@ -80,8 +80,8 @@
     $(".pause").click(function(){
         $(this).removeClass("active").prev().prev().trigger('play');
     });
-    $("video").click(function(){
-        if($("video")[0].paused==true){
+    $("Video").click(function(){
+        if($("Video")[0].paused==true){
             $(this).trigger('play');
             $(this).next().removeClass("active").next().removeClass("active");
         }else{
@@ -89,10 +89,10 @@
             $(this).next().next().addClass("active");
         }
     });
-    $("video").on("pause",function(){
+    $("Video").on("pause",function(){
         $(this).next().next().addClass("active");
     });
-    $("video").on("play",function(){
+    $("Video").on("play",function(){
         $(this).next().removeClass("active").next().removeClass("active");
     });
 }();

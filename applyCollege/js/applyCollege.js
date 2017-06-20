@@ -38,6 +38,31 @@
     });
 }();
 
+//高考心态选择组件
++function(){
+    $(".mentality-box li").click(function(){
+        switch($(".mentality-box li").index($(this)))
+        {
+            case 0:
+                $(this).addClass("active").siblings().removeClass("active");
+                $(".mentality .box-content").css({"left":"0px"});
+                break;
+            case 1:
+                $(this).addClass("active").siblings().removeClass("active");
+                $(".mentality .box-content").css({"left":"-740px"});
+                break;
+            case 2:
+                $(this).addClass("active").siblings().removeClass("active");
+                $(".mentality .box-content").css({"left":"-1480px"});
+                break;
+            case 3:
+                $(this).addClass("active").siblings().removeClass("active");
+                $(".mentality .box-content").css({"left":"-2220px"});
+                break;
+        }
+    })
+}();
+
 //家长学生就业选择组件
 +function(){
     $(".option-box>ul li").click(function(){
