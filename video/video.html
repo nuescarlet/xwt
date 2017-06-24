@@ -1,10 +1,245 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="keywords" content="学网通">
+    <meta name="description" content="学网通">
+    <title>学网通</title>
+    <link rel="shortcut icon" href="../img/logo.ico"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/video-js.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/textarea.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
+<!--顶部导航栏-->
+<header>
+    <div class="h-nav">
+        <div class="content">
+            <a href="" class="logo"><img src="../img/top_logo.png" alt=""/></a>
+            <div class="tel">
+                <p>0731-8582-1216</p>
+                <div class="clear">
+                    <a href="">登 录</a>
+                    <a href="">注 册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--副导航栏-->
+<section class="s-nav">
+    <div class="content clear">
+        <a>全部课程分类</a>
+        <div class="class-list clear">
+            <a href="">
+                <span>语文</span>
+            </a>
+            <a href="">
+                <span>数学</span>
+            </a>
+            <a href="">
+                <span>英语</span>
+            </a>
+            <a href="">
+                <span>物理</span>
+            </a>
+            <a href="">
+                <span>生物</span>
+            </a>
+            <a href="">
+                <span>历史</span>
+            </a>
+            <a href="">
+                <span>地理</span>
+            </a>
+            <a href="">
+                <span>化学</span>
+            </a>
+            <a href="">
+                <span>政治</span>
+            </a>
+            <a href="">
+                <span>体育</span>
+            </a>
+        </div>
+        <a href="../Home.html">首页</a>
+        <a href="../College/College.html">考好大学</a>
+        <a href="../applyCollege/applyCollege.html">填报志愿</a>
+        <a href="../Quality/Quality.html">综合素养</a>
+        <a href="../Practice/Practice.html">实践活动</a>
+    </div>
 
+</section>
+<!--视频-->
+<section class="video-box">
+    <div class="content clear">
+        <div class="vadio">
+            <video id="video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="930" height="500"
+                   poster=""
+                   x5-video-player-fullscreen="true" style="object-fit:fill">
+            </video>
+        </div>
+        <div class="list">
+            <p>目录</p>
+            <p>课程名字</p>
+            <div class="list-box" id="video-list">
+                <ul class="list-content _panel-box">
+                    <li><a href="javascript:jump(201705192107001)"  ondragstart="return false">01 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107002)" ondragstart="return false">02 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107003)"  ondragstart="return false">03 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107004)"  ondragstart="return false">04 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107005)"  ondragstart="return false">05 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107006)"  ondragstart="return false">06 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107007)"  ondragstart="return false">07 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107008)"  ondragstart="return false">08 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107009)"  ondragstart="return false">09 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107010)"  ondragstart="return false">10 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107011)"  ondragstart="return false">11 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107012)"  ondragstart="return false">12 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107013)"  ondragstart="return false">13 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107014)"  ondragstart="return false">14 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107015)"  ondragstart="return false">15 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107016)"  ondragstart="return false">16 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107017)"  ondragstart="return false">17 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107018)"  ondragstart="return false">18 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107019)"  ondragstart="return false">19 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107020)"  ondragstart="return false">20 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107021)"  ondragstart="return false">21 文言文阅读</a></li>
+                    <li><a href="javascript:jump(201705192107022)"  ondragstart="return false">22 文言文阅读</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-slide">
+            <i></i>
+        </div>
+    </div>
+</section>
+<!--评论-->
+<section class="comment">
+    <div class="content">
+        <textarea name="comment-text" id="textarea-l" placeholder="看完视频，有什么想对老师、针对课程内容的建议？或者哪里有不清楚的地方？我们期待你的反馈。"></textarea>
+        <div class="btn">提交评论</div>
+        <ul class="evaluate clear">
+            <li class="active">
+                <i></i>
+                <b></b>
+                <span>好评</span>
+            </li>
+            <li>
+                <i></i>
+                <b></b>
+                <span>中评</span>
+            </li>
+            <li>
+                <i></i>
+                <b></b>
+                <span>差评</span>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--课程评价-->
+<section class="class-evaluate">
+    <div class="content">
+        <p>课程评价</p>
+        <div class="evaluate-option clear">
+            <div>
+                <p>99%</p>
+                好评度
+            </div>
+            <ul class="clear">
+                <li class="clear active"><i><b></b></i>全部评论(<span>520</span>)</li>
+                <li class="clear"><i><b></b></i>好评(<span>500</span>)</li>
+                <li class="clear"><i><b></b></i>中评(<span>15</span>)</li>
+                <li class="clear"><i><b></b></i>差评(<span>5</span>)</li>
+            </ul>
+        </div>
+        <ul class="reply">
+            <li id="re1">
+                <b class="portrait"><img src="../user/portrait/2-min.jpg" alt=""/></b>
+                <p class="name">欧根亲王<span>2017-5-16</span></p>
+                <p class="text">这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识这个课程很棒，我学习到了很多知识</p>
+                <div class="btn-reply" data-click="1">
+                    <i></i>
+                    回复(<span>2</span>)
+                </div>
+            </li>
+            <li id="re2">
+                <b class="portrait"><img src="../user/portrait/4-min.jpg" alt=""/></b>
+                <p class="name">拉菲<span>2017-5-16</span></p>
+                <p class="text">这个课程很棒，我学习到了很多知识</p>
+                <div class="btn-reply">
+                    <i></i>
+                    回复(<span>0</span>)
+                </div>
+            </li>
+            <li id="re3">
+                <b class="portrait"><img src="../user/portrait/1-min.jpg" alt=""/></b>
+                <p class="name">光辉<span>2017-5-16</span></p>
+                <p class="text">这个课程很棒，我学习到了很多知识</p>
+                <div class="btn-reply" data-click="1">
+                    <i></i>
+                    回复(<span>2</span>)
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--页尾-->
+<footer style="margin-top:50px;">
+    <div class="cover"></div>
+    <div class="content">
+        <ul class="clear">
+            <li>
+                <a href="" class="logo"></a>
+                <p>学网通给你一个不一样的学习计划,日积月累成学霸，让每个有提升愿望的用户能学到更多名校的知识</p>
+            </li>
+            <li class="about">
+                <p class="title">关于我们</p>
+                <p class="link">
+                    <a href="">关于我们</a><a href="">公司简介</a><br/>
+                    <a href="">联系我们</a><a href="">常见问题</a><br/>
+                    <a href="">意见反馈</a><a href="">法律条款</a>
+                </p>
+            </li>
+            <li class="focus">
+                <p class="title">关注我们</p>
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="" class="bbs">进入论坛 >></a>
+            </li>
+        </ul>
+        <div class="copyright">
+            <p>粤B2-20090196-26 | 京ICP备12029869号-2 | 京公网安备4230602300207 <br/>
+                ©2016-2017 icourse163.org</p>
+        </div>
+    </div>
+</footer>
+<script src="js/video-js.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var videoId = location.search.replace(/[?&]id=([^&#]*)/gi,function(a,b){
+            return b;
+        });
+        $("video").append("<source src='http://www.xwt315.com/uploads/course/"+videoId+".mp4' type='video/mp4' /> <source src='http://www.xwt315.com/uploads/course/"+videoId+".mp4' type='video/webm' /> <source src='http://www.xwt315.com/uploads/course/"+videoId+".mp4' type='video/ogg' />");
+        var jumpa=$(".list-content a");
+        for(var i=0;i<jumpa.length;i++){
+            var jumpId=jumpa[i].href.replace(/[^0-9]/ig,"");
+            if(jumpId==videoId) {
+                $(jumpa[i]).parent().addClass("active")
+            }
+        }
+    })
+    videojs("video_1", {}, function(){
+    });
+</script>
+<script src="js/video.js"></script>
+<script>
+    $("#video-list").xb_scroll();
+</script>
 </body>
 </html>
