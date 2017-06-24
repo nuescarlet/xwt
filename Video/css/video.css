@@ -400,6 +400,7 @@ footer .content .copyright p {
 .video-box .content {
   width: 1200px;
   margin: 0 auto;
+  background: #000;
 }
 .video-box .content .vadio {
   width: 930px;
@@ -526,7 +527,7 @@ footer .content .copyright p {
 }
 .comment .content {
   width: 1200px;
-  height: 90px;
+  min-height: 130px;
   box-sizing: border-box;
   border: 1px solid #1bb278;
   margin: 0 auto;
@@ -534,14 +535,18 @@ footer .content .copyright p {
 }
 .comment .content textarea {
   width: 1194px;
-  height: 84px;
+  line-height: 1.5  ;
+  -webkit-appearance: none;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   outline: none;
   border: none;
   resize: none;
   font-size: 16px;
   font-family: Arial, Helvetica, "microsoft yahei", sans-serif;
-  box-sizing: border-box;
   padding: 5px;
+  min-height: 90px;
 }
 .comment .content .btn {
   width: 130px;
@@ -555,4 +560,241 @@ footer .content .copyright p {
   font-size: 16px;
   line-height: 36px;
   text-align: center;
+}
+.comment .content .evaluate {
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+.comment .content .evaluate li {
+  float: left;
+}
+.comment .content .evaluate li:nth-child(1) b {
+  background: url(../img/video-sprite.png) -140px -188px;
+}
+.comment .content .evaluate li:nth-child(2) b {
+  background: url(../img/video-sprite.png) -185px -188px;
+}
+.comment .content .evaluate li:nth-child(3) b {
+  background: url(../img/video-sprite.png) -235px -188px;
+}
+.comment .content .evaluate li.active i {
+  background: url(../img/video-sprite.png) -122px -196px;
+  border: 0px solid #616161;
+}
+.comment .content .evaluate li i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #616161;
+  margin-left: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.comment .content .evaluate li b {
+  display: inline-block;
+  width: 18px;
+  height: 22px;
+  margin-left: 2px;
+}
+.comment .content .evaluate li span {
+  display: inline-block;
+  color: #616161;
+  font-size: 14px;
+}
+.class-evaluate {
+  width: 100%;
+  margin-top: 30px;
+}
+.class-evaluate .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.class-evaluate .content > p {
+  display: table;
+  font-size: 20px;
+  color: #343434;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  border-bottom: 2px solid #1fbf62;
+  padding-bottom: 8px;
+}
+.class-evaluate .content .evaluate-option {
+  width: 1200px;
+  height: 76px;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+}
+.class-evaluate .content .evaluate-option > div {
+  float: left;
+  height: 74px;
+}
+.class-evaluate .content .evaluate-option > div:nth-child(1) {
+  width: 126px;
+  border-right: 1px solid #d9d9d9;
+  text-align: center;
+  font-size: 16px;
+}
+.class-evaluate .content .evaluate-option > div:nth-child(1) p {
+  font-size: 30px;
+  color: #ed4e12;
+  margin: 10px 0 4px;
+}
+.class-evaluate .content .evaluate-option > ul {
+  float: left;
+}
+.class-evaluate .content .evaluate-option > ul li {
+  float: left;
+  margin-left: 30px;
+  height: 74px;
+  line-height: 74px;
+  font-size: 14px;
+  color: #343434;
+}
+.class-evaluate .content .evaluate-option > ul li.active b {
+  background: #1fbf62;
+}
+.class-evaluate .content .evaluate-option > ul li i {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #bebebe;
+  box-sizing: border-box;
+  margin-top: 29px;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.class-evaluate .content .evaluate-option > ul li i b {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -4px;
+  margin-left: -4px;
+}
+.class-evaluate .content .reply li {
+  width: 1200px;
+  height: auto;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px 20px 10px 120px;
+  position: relative;
+  box-sizing: border-box;
+}
+.class-evaluate .content .reply li .portrait {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 30PX;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.class-evaluate .content .reply li .name {
+  font-size: 18px;
+  color: #1fbf62;
+}
+.class-evaluate .content .reply li .name span {
+  font-size: 12px;
+  color: #aeaeae;
+  margin-left: 10px;
+}
+.class-evaluate .content .reply li .text {
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.class-evaluate .content .reply li .btn-reply {
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #7d7d7d;
+  cursor: pointer;
+  position: relative;
+  left: 20px;
+}
+.class-evaluate .content .reply li .btn-reply i {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  background: url(../img/video-sprite.png) -362px -188px;
+  position: relative;
+  top: 2px;
+}
+.class-evaluate .content .reply li .reply-content {
+  width: 1068px;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  position: relative;
+  padding: 10px 0 0 10px;
+}
+.class-evaluate .content .reply li .reply-content > i {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  position: absolute;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  background: #fff;
+  top: -5px;
+  right: 14px;
+}
+.class-evaluate .content .reply li .reply-content > p {
+  position: absolute;
+  top: 72px;
+  color: #d9d9d9;
+  font-size: 14px;
+  left: 10px;
+}
+.class-evaluate .content .reply li .reply-content textarea {
+  width: 1047px;
+  height: 40px;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  font-family: Arial, Helvetica, "microsoft yahei", sans-serif;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #1fbf62;
+  overflow-y: visible;
+}
+.class-evaluate .content .reply li .reply-content .btn-re-reply {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 2px 0 10px 996px;
+  border-radius: 4px;
+  background: #1fbf62;
+  cursor: pointer;
+}
+.class-evaluate .content .reply li .reply-content .re-reply {
+  padding: 10px 0 0 85px;
+  position: relative;
+  border-top: 1px solid #d9d9d9;
+}
+.class-evaluate .content .reply li .reply-content .re-reply .portrait {
+  left: 10px;
+}
+.class-evaluate .content .reply li .reply-content .re-reply .btn-reply {
+  left: -5px;
+  margin-top: 0px;
+}
+.class-evaluate .content .reply li .reply-content .re-reply .btn-reply i {
+  margin-right: 5px;
 }

@@ -378,6 +378,8 @@ body.vjs-full-window {
   -o-transition: all 0.4s;
   transition: all 0.4s; }
 
+@-moz-document url-prefix() { .video-js .vjs-big-play-button { line-height: 66px; } }
+
 .video-js .vjs-big-play-button:hover{
   background-color: #1cb175;
 }

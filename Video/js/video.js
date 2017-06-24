@@ -1,8 +1,8 @@
-//ÊÓÆµÑ¡ÏîÌø×ª
+//è§†é¢‘é€‰é¡¹è·³è½¬
 var jump=function(id){
-        window.location.href="Video.html?id="+id;
-    };
-//ÊÓÆµ×é¼ş²¹Õı
+    window.location.href="Video.html?id="+id;
+};
+//è§†é¢‘ç»„ä»¶è¡¥æ­£
 +function(){
     $("video").on("pause",function(){
         $(".vjs-big-play-button").css({"display":"block"})
@@ -12,7 +12,7 @@ var jump=function(id){
     });
 }();
 
-//¹ö¶¯Ìõ×ó±ßĞ¡¼ıÍ·
+//æ»šåŠ¨æ¡å·¦è¾¹å°ç®­å¤´
 +function(){
     var move=0;
     var fullscreen=0;
@@ -57,7 +57,7 @@ var jump=function(id){
     });
 }();
 
-//¹ö¶¯Ìõ×é¼ş
+//æ»šåŠ¨æ¡ç»„ä»¶
 +function(){
     (function($, window, document,undefined) {
 
@@ -113,7 +113,7 @@ var jump=function(id){
             var sMaxTop = iScrollBoxHeight - iScrollBarHeight + opts.barOffTop;
 
             var sMouseWheel = "mousewheel";
-            if(!("onmousewheel" in document)){						/*ä¯ÀÀÆ÷Êó±ê¹ö¶¯ÊÂ¼şµÄ¼òµ¥¼æÈİ*/
+            if(!("onmousewheel" in document)){						/*æµè§ˆå™¨é¼ æ ‡æ»šåŠ¨äº‹ä»¶çš„ç®€å•å…¼å®¹*/
                 sMouseWheel = "DOMMouseScroll";
             }
             elem.on(sMouseWheel,function(ev){
@@ -138,7 +138,7 @@ var jump=function(id){
                 fnScrollContent(elem,elChild,jqScrollBox,jqScrollBar,opts.barOffTop);
             });
 
-            var isS_B = false ,  doc_py , barTop , conTop;			/*¹ö¶¯ÌõÍÏ×§*/
+            var isS_B = false ,  doc_py , barTop , conTop;			/*æ»šåŠ¨æ¡æ‹–æ‹½*/
             jqScrollBar.on("mousedown",function(ev){
                 isS_B = true;
                 elem.css({"-moz-user-select": "none","-khtml-user-select": "none","user-select": "none"});
@@ -174,13 +174,13 @@ var jump=function(id){
             });
 
 
-            elChild.bind('DOMNodeInserted', function(e) {			/*ÈİÆ÷ÄÚÔªËØÌí¼Ó*/
+            elChild.bind('DOMNodeInserted', function(e) {			/*å®¹å™¨å†…å…ƒç´ æ·»åŠ */
                 fnContentResize();
             });
-            elChild.bind('DOMNodeRemoved', function(e) {		    /*ÈİÆ÷ÄÚÔªËØÒÆ³ı*/
+            elChild.bind('DOMNodeRemoved', function(e) {		    /*å®¹å™¨å†…å…ƒç´ ç§»é™¤*/
                 setTimeout(function(){fnContentResize();},100);
             });
-            function fnContentResize()								/*ÈİÆ÷ÄÚÔªËØ±ä¶¯¸üĞÂ¹ö¶¯*/
+            function fnContentResize()								/*å®¹å™¨å†…å…ƒç´ å˜åŠ¨æ›´æ–°æ»šåŠ¨*/
             {
                 if(opts.isMaxHeight)
                 {
@@ -209,7 +209,7 @@ var jump=function(id){
             }
 
             function fnScrollContent(jqWrapper,jqContent,jqFollowWrapper,jqFlollowContent,iOffset){
-                var rate = parseInt(jqContent.css("top"))/(jqContent.outerHeight()-jqWrapper.innerHeight())//¾íÆğµÄ±ÈÂÊ
+                var rate = parseInt(jqContent.css("top"))/(jqContent.outerHeight()-jqWrapper.innerHeight())//å·èµ·çš„æ¯”ç‡
                 var iTop = (jqFlollowContent.outerHeight()-jqFollowWrapper.innerHeight())*rate + iOffset;
                 jqFlollowContent.css("top",iTop);
 
@@ -222,3 +222,81 @@ var jump=function(id){
 
 }();
 
+//è¯„è®ºæ¡†è‡ªé€‚åº”ç»„ä»¶
+;(function ($) {
+    $(function () {
+        $('#textarea-l').flexText();
+    });
+    // Constructor
+    function FT(elem) {
+        this.$textarea = $(elem);
+
+        this._init();
+    }
+
+    FT.prototype = {
+        _init: function () {
+            var _this = this;
+
+            // Insert wrapper elem & pre/span for textarea mirroring
+            this.$textarea.wrap('<div class="flex-text-wrap" />').before('<pre><span /><br /><br /></pre>');
+
+            this.$span = this.$textarea.prev().find('span');
+
+            // Add input event listeners
+            // * input for modern browsers
+            // * propertychange for IE 7 & 8
+            // * keyup for IE >= 9: catches keyboard-triggered undos/cuts/deletes
+            // * change for IE >= 9: catches mouse-triggered undos/cuts/deletions (when textarea loses focus)
+            this.$textarea.on('input propertychange keyup change', function () {
+                _this._mirror();
+            });
+
+            // jQuery val() strips carriage return chars by default (see http://api.jquery.com/val/)
+            // This causes issues in IE7, but a valHook can be used to preserve these chars
+            $.valHooks.textarea = {
+                get: function (elem) {
+                    return elem.value.replace(/\r?\n/g, "\r\n");
+                }
+            };
+
+            // Mirror contents once on init
+            this._mirror();
+        }
+
+        // Mirror pre/span & textarea contents
+        ,_mirror: function () {
+            this.$span.text(this.$textarea.val());
+        }
+    };
+
+    // jQuery plugin wrapper
+    $.fn.flexText = function () {
+        return this.each(function () {
+            // Check if already instantiated on this elem
+            if (!$.data(this, 'flexText')) {
+                // Instantiate & store elem + string
+                $.data(this, 'flexText', new FT(this));
+            }
+        });
+    };
+
+})(jQuery);
+
+//è¯„è®ºç»„ä»¶
++function(){
+    $(".evaluate-option i").click(function(){
+        $(this).parent().addClass("active").siblings().removeClass("active");
+    })
+    $(".evaluate i").click(function(){
+        $(this).parent().addClass("active").siblings().removeClass("active");
+    })
+
+    $(".btn-reply").on("click",function(){
+        if($(this).children("span").html()>0&&$(this).data("click")==1){
+            $(this).data("click",0);
+            $(this).parent().append('<div class="reply-content clear"><i></i><textarea name="reply-text" id="" cols="30" rows="2"></textarea><p>å­—æ•°é™300å­—ç¬¦ä»¥å†…</p><div class="btn-re-reply">å›å¤</div><div class="re-reply"><b class="portrait"><img src="../user/portrait/1-min.jpg" alt=""/></b><p class="name">å…‰è¾‰<span>2017-5-16</span></p><p class="text">è¿™ä¸ªè¯¾ç¨‹å¾ˆæ£’ï¼Œæˆ‘å­¦ä¹ åˆ°äº†å¾ˆå¤šçŸ¥è¯†</p><div class="btn-reply"><i></i>å›å¤</div></div><div class="re-reply"><b class="portrait"><img src="../user/portrait/3-min.jpg" alt=""/></b><p class="name">å¤•ç«‹<span>2017-5-16</span></p><p class="text">æ¥¼ä¸Šè¯´å¾—å¾ˆå¯¹</p><div class="btn-reply"><i></i>å›å¤</div></div></div>')
+        }
+
+    })
+}();

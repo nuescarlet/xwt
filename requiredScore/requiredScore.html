@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="学网通">
+    <meta name="description" content="学网通">
+    <title>学网通</title>
+    <link rel="shortcut icon" href="../img/logo.ico"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/requiredScore.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<!--顶部导航栏-->
+<header>
+    <div class="h-nav">
+        <div class="content">
+            <a href="" class="logo"><img src="../img/top_logo.png" alt=""/></a>
+            <div class="tel">
+                <p>0731-8582-1216</p>
+                <div class="clear">
+                    <a href="">登 录</a>
+                    <a href="">注 册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--副导航栏-->
+<section class="s-nav">
+    <div class="content clear">
+        <a href="../Home.html">首页</a>
+        <a href="../College/College.html">考好大学</a>
+        <a href="../applyCollege/applyCollege.html">填报志愿</a>
+        <a href="../Quality/Quality.html">综合素养</a>
+        <a href="../Practice/Practice.html">实践活动</a>
+    </div>
+</section>
+<!--banner-->
+<section class="banner">
+    <img src="img/banner.png" alt=""/>
+</section
+<!--content-box-->
+<section class="content-box">
+    <div class="content clear">
+        <div class="left-box">
+            <ul>
+                <li class="score active" data-class="0"><i></i><p>分数线查询</p><b></b></li>
+                <li class="major" data-class="1"><i></i><p>专业查询</p><b></b></li>
+                <li class="art" data-class="2"><i></i><p>艺考查询</p><b></b></li>
+                <li class="university" data-class="3"><i></i><p>全国院校库</p><b></b></li>
+                <li class="volunteer" data-class="4"><i></i><p>填报志愿</p><b></b></li>
+            </ul>
+        </div>
+        <div class="right-box">
+            <div class="address">
+                <a href="../Home.html">首页</a>
+                <a href="../applyCollege/applyCollege.html">&gt;<span>填报志愿</span></a>
+                <a>&gt;<span>分数线查询</span></a>
+            </div>
+            <div class="right-content">
+                <ul class="box-option clear">
+                    <li class="active">高校分数线</li>
+                    <li>专业分数线</li>
+                    <li>地区批次分数线</li>
+                </ul>
+                <ul class="input clear" data-class="0">
+                    <li>分数范围：</li>
+                    <li><input type="text" maxlength="3" id="scoreMin"/></li>
+                    <li>&nbsp;-&nbsp;</li>
+                    <li><input type="text" maxlength="3" id="scoreMax"/></li>
+                    <li>&nbsp;分</li>
+                    <li class="menu">
+                        <span>请选择年份</span>
+                        <i></i>
+                        <div>
+                            <p>2014</p>
+                            <p>2015</p>
+                            <p>2016</p>
+                            <p>2017</p>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <span>文/理科</span>
+                        <i></i>
+                        <div>
+                            <p>文科</p>
+                            <p>理科</p>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <span>本/专科</span>
+                        <i></i>
+                        <div>
+                            <p>本科</p>
+                            <p>专科</p>
+                        </div>
+                    </li>
+                    <li class="menu">
+                        <span>请选择批次</span>
+                        <i></i>
+                        <div>
+                            <p>本科一批</p>
+                            <p>本科二批</p>
+                            <p>本科三批</p>
+                            <p>高职(专科)</p>
+                        </div>
+                    </li>
+                    <li class="btn" id="score-btn">查询</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--错误提示-->
+<div class="error">
+    功能尚未开放
+</div>
+<!--footer-->
+<footer>
+    <div class="content">
+        <p>粤B2-20090196-26 | 京ICP备12029869号-2 | 京公网安备4230602300207</p>
+        <p>©2016-2017 icourse163.org</p>
+    </div>
+</footer>
+<script src="js/requiredScore.js"></script>
+</body>
+</html>
