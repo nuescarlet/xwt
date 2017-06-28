@@ -1,0 +1,262 @@
+body {
+  font-family: Arial, Helvetica, "microsoft yahei", sans-serif;
+  color: #666;
+  margin: 0px;
+  font-size: 10px;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+dl,
+dd {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+img {
+  vertical-align: bottom;
+}
+a {
+  color: #2e2e2e;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section {
+  min-width: 1480px;
+}
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.bg li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.bg li:nth-child(1) {
+  background-image: url(../img/bg1.jpg);
+}
+.bg li:nth-child(2) {
+  background-image: url(../img/bg2.jpg);
+}
+.bg li:nth-child(3) {
+  background-image: url(../img/bg3.jpg);
+}
+.bg li.active {
+  opacity: 1;
+}
+.bg li.cover {
+  background: #000;
+  opacity: .5;
+  display: block;
+}
+header {
+  width: 100%;
+  padding: 50px 65px 0 65px;
+  box-sizing: border-box;
+  min-width: 1280px;
+}
+header > ul {
+  float: left;
+}
+header > ul li {
+  float: left;
+  margin-right: 50px;
+  font-size: 16px;
+}
+header > ul li a {
+  color: #fff;
+}
+header > div {
+  font-size: 16px;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  float: right;
+  position: relative;
+  text-align: right;
+  cursor: pointer;
+}
+header > div i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../img/more.png);
+  position: relative;
+  top: 2px;
+  left: -20px;
+}
+header > div:hover > div {
+  z-index: 1;
+  opacity: 1;
+}
+header > div > div {
+  width: 106px;
+  height: 158px;
+  position: absolute;
+  bottom: -152px;
+  left: -29px;
+  background: url(../img/list.png);
+  padding-top: 12px;
+  padding-left: 1px;
+  box-sizing: border-box;
+  z-index: -2;
+  transition: all .5s ease;
+  opacity: 0;
+}
+header > div > div > a {
+  display: block;
+  width: 104px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 0;
+  transition: all .5s ease;
+}
+header > div > div > a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.test {
+  width: 100%;
+  margin-top: 10px;
+}
+.test .content {
+  width: 600px;
+  min-width: 600px;
+  margin: 0 auto;
+}
+.test .content .title {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 10px;
+  font-weight: 500;
+}
+.test .content .count {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  left: -3px;
+}
+.test .content .count li {
+  float: left;
+  margin: 20px 10px 0;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: .5px;
+}
+.test .content .count li span {
+  font-size: 16px;
+}
+.test .content .count li:nth-child(2) {
+  border-bottom: 3px solid #fff;
+}
+.test .content .flip {
+  margin-top: 66px;
+}
+.test .content .flip li {
+  float: left;
+  height: 60px;
+  width: 200px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.test .content .flip li:nth-child(1),
+.test .content .flip li:nth-child(3) {
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 0 15px;
+  letter-spacing: .5px;
+  transition: all .5s ease;
+}
+.test .content .flip li:nth-child(1):hover,
+.test .content .flip li:nth-child(3):hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.test .content .flip li:nth-child(2) {
+  text-align: center;
+  font-size: 16px;
+  width: 140px;
+  line-height: 60px;
+  letter-spacing: 1px;
+}
+.test .content .test-content {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 20px;
+  height: 508px;
+}
+.test .content .test-content li {
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 15px;
+}
+.test .content .test-content li p {
+  letter-spacing: .5px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+.test .content .test-content li > div {
+  float: left;
+  margin-left: 25px;
+  margin-right: 5px;
+  width: 66px;
+  height: 24px;
+  border-radius: 12px;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.test .content .test-content li > div:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.test .content .test-content li > div.active {
+  background: rgba(255, 255, 255, 0.5);
+}
+.error {
+  position: fixed;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  background: #333;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  padding: 20px 40px;
+  font-size: 14px;
+  font-family: "microsoft yahei";
+  letter-spacing: .5px;
+  opacity: 0;
+  display: none;
+}

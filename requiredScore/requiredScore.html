@@ -58,63 +58,611 @@
                 <a href="../applyCollege/applyCollege.html">&gt;<span>填报志愿</span></a>
                 <a>&gt;<span>分数线查询</span></a>
             </div>
-            <div class="right-content">
+            <div class="right-change" id="score" data-class="0">
                 <ul class="box-option clear">
-                    <li class="active">高校分数线</li>
-                    <li>专业分数线</li>
-                    <li>地区批次分数线</li>
+                    <li class="active" data-option="1">高校分数线</li>
+                    <li data-option="2">专业分数线</li>
+                    <li data-option="3">地区批次分数线</li>
                 </ul>
-                <ul class="input clear" data-class="0">
-                    <li>分数范围：</li>
-                    <li><input type="text" maxlength="3" id="scoreMin"/></li>
-                    <li>&nbsp;-&nbsp;</li>
-                    <li><input type="text" maxlength="3" id="scoreMax"/></li>
-                    <li>&nbsp;分</li>
-                    <li class="menu">
-                        <span>请选择年份</span>
-                        <i></i>
-                        <div>
-                            <p>2014</p>
-                            <p>2015</p>
-                            <p>2016</p>
-                            <p>2017</p>
-                        </div>
-                    </li>
-                    <li class="menu">
-                        <span>文/理科</span>
-                        <i></i>
-                        <div>
-                            <p>文科</p>
-                            <p>理科</p>
-                        </div>
-                    </li>
-                    <li class="menu">
-                        <span>本/专科</span>
-                        <i></i>
-                        <div>
-                            <p>本科</p>
-                            <p>专科</p>
-                        </div>
-                    </li>
-                    <li class="menu">
-                        <span>请选择批次</span>
-                        <i></i>
-                        <div>
-                            <p>本科一批</p>
-                            <p>本科二批</p>
-                            <p>本科三批</p>
-                            <p>高职(专科)</p>
-                        </div>
-                    </li>
-                    <li class="btn" id="score-btn">查询</li>
+                <div class="right-content" data-option="1">
+                    <ul class="input clear">
+                        <li>分数范围：</li>
+                        <li><input type="text" maxlength="3" id="scoreMin"/></li>
+                        <li>&nbsp;-&nbsp;</li>
+                        <li><input type="text" maxlength="3" id="scoreMax"/></li>
+                        <li style="margin-right:20px">&nbsp;分</li>
+                        <li class="menu">
+                            <span>请选择年份</span>
+                            <i></i>
+                            <div>
+                                <p>2014</p>
+                                <p>2015</p>
+                                <p>2016</p>
+                                <p>2017</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>文/理科</span>
+                            <i></i>
+                            <div>
+                                <p>文科</p>
+                                <p>理科</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>本/专科</span>
+                            <i></i>
+                            <div>
+                                <p>本科</p>
+                                <p>专科</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>请选择批次</span>
+                            <i></i>
+                            <div>
+                                <p>本科一批</p>
+                                <p>本科二批</p>
+                                <p>本科三批</p>
+                                <p>高职(专科)</p>
+                            </div>
+                        </li>
+                        <li class="btn">查询</li>
+                    </ul>
+                    <ul class="table-title clear">
+                        <li>院校名称</li>
+                        <li>生源地</li>
+                        <li>考生类别</li>
+                        <li>批次</li>
+                        <li>年份</li>
+                        <li>最高分</li>
+                        <li>平均分</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                </div>
+                <div class="right-content class2" data-option="2">
+                    <ul class="input clear">
+                        <li class="menu">
+                            <span>专业大类</span>
+                            <i></i>
+                            <div>
+                                <p>建筑</p>
+                                <p>自动化</p>
+                                <p>通信</p>
+                                <p>电子</p>
+                                <p>法律</p>
+                                <p>英语</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>文/理科</span>
+                            <i></i>
+                            <div>
+                                <p>文科</p>
+                                <p>理科</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>生源地</span>
+                            <i></i>
+                            <div>
+                                <p>北京</p>
+                                <p>上海</p>
+                                <p>广州</p>
+                                <p>深圳</p>
+                                <p>湖南</p>
+                                <p>湖北</p>
+                                <p>浙江</p>
+                                <p>江苏</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>院校所在地</span>
+                            <i></i>
+                            <div>
+                                <p>北京</p>
+                                <p>上海</p>
+                                <p>广州</p>
+                                <p>深圳</p>
+                                <p>湖南</p>
+                                <p>湖北</p>
+                                <p>浙江</p>
+                                <p>江苏</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>录取批次</span>
+                            <i></i>
+                            <div>
+                                <p>本科一批</p>
+                                <p>本科二批</p>
+                                <p>本科三批</p>
+                                <p>高职(专科)</p>
+                            </div>
+                        </li>
+                        <li class="btn">查询</li>
+                    </ul>
+                    <ul class="table-title clear">
+                        <li>专业名称</li>
+                        <li>院校名称</li>
+                        <li>最高分</li>
+                        <li>平均分</li>
+                        <li>考生所在地</li>
+                        <li>考生类别</li>
+                        <li>批次</li>
+                        <li>年份</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>旅游管理</li>
+                        <li>清华</li>
+                        <li>808</li>
+                        <li>606</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                    </ul>
+                </div>
+                <div class="right-content class3" style="display: none" data-option="3">
+                    <ul class="input clear">
+                        <li class="menu">
+                            <span>文/理科</span>
+                            <i></i>
+                            <div>
+                                <p>文科</p>
+                                <p>理科</p>
+                            </div>
+                        </li>
+                        <li class="menu city">
+                            <span>生源地</span>
+                            <i></i>
+                            <div>
+                                <p>北京</p>
+                                <p>上海</p>
+                                <p>广州</p>
+                                <p>深圳</p>
+                                <p>湖南</p>
+                                <p>湖北</p>
+                                <p>浙江</p>
+                                <p>江苏</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>录取批次</span>
+                            <i></i>
+                            <div>
+                                <p>本科一批</p>
+                                <p>本科二批</p>
+                                <p>本科三批</p>
+                                <p>高职(专科)</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>年份</span>
+                            <i></i>
+                            <div>
+                                <p>2014</p>
+                                <p>2015</p>
+                                <p>2016</p>
+                                <p>2017</p>
+                            </div>
+                        </li>
+                        <li class="btn">查询</li>
+                    </ul>
+                    <ul class="table-title clear">
+                        <li>年份</li>
+                        <li>生源地</li>
+                        <li>考生类别</li>
+                        <li>批次</li>
+                        <li>最低控制分数线</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>2016</li>
+                        <li>新疆</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>606</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-change" id="major" style="display: none" id="major" data-class="1">
+                <ul class="box-option clear">
+                    <li class="active" data-option="1">本科专业</li>
+                    <li data-option="2">专科专业</li>
                 </ul>
+                <div class="right-content" data-option="1">
+                    <ul class="major-option clear">
+                        <li class="active">哲学</li>
+                        <li>经济学</li>
+                        <li>法学</li>
+                        <li>教育学</li>
+                        <li>文学</li>
+                        <li>历史学</li>
+                        <li>理学</li>
+                        <li>工学</li>
+                        <li>农学</li>
+                        <li>医学</li>
+                        <li>管理学</li>
+                        <li>艺术学</li>
+                    </ul>
+                    <div class="major-content">
+                        <p class="title">哲学 (56) <span>7个专业类，36个专科专业</span></p>
+                        <p class="title-s">建筑设计类 (5601)</p>
+                        <ul class="classification clear">
+                            <li data-majorId="560101">建筑设计技术</li>
+                            <li data-majorId="560102">建筑装饰工程技术</li>
+                            <li data-majorId="560103">中国古建筑工程技术</li>
+                            <li data-majorId="560104">室内设计技术</li>
+                            <li data-majorId="560105">环境艺术设计</li>
+                            <li data-majorId="560106">园林工程技术</li>
+                        </ul>
+                        <p class="title-s">城镇规划与管理类 (5602)</p>
+                        <ul class="classification clear">
+                            <li data-majorId="560201">城镇规划</li>
+                            <li data-majorId="560202">城市管理与检察</li>
+                            <li data-majorId="560203">城镇建设</li>
+                        </ul>
+                        <p class="title-s">城镇规划与管理类 (5602)</p>
+                        <ul class="classification clear">
+                            <li data-majorId="560201">城镇规划</li>
+                            <li data-majorId="560202">城市管理与检察</li>
+                            <li data-majorId="560203">城镇建设</li>
+                        </ul>
+                        <p class="title-s">城镇规划与管理类 (5602)</p>
+                        <ul class="classification clear">
+                            <li data-majorId="560201">城镇规划</li>
+                            <li data-majorId="560202">城市管理与检察</li>
+                            <li data-majorId="560203">城镇建设</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-content" style="display: none" data-option="2">
+                    <ul class="major-option clear">
+                        <li class="active" data-majorId="56">土建</li>
+                        <li data-majorId="57">水利</li>
+                        <li data-majorId="58">制造</li>
+                        <li data-majorId="59">财经</li>
+                        <li data-majorId="60">旅游</li>
+                        <li data-majorId="61">公安</li>
+                        <li data-majorId="62">法律</li>
+                        <li data-majorId="63">农林牧渔</li>
+                        <li data-majorId="64">交通运输</li>
+                        <li data-majorId="65">电子信息</li>
+                        <li data-majorId="66">轻纺食品</li>
+                        <li data-majorId="67">医药卫生</li>
+                        <li data-majorId="68">公交事业</li>
+                        <li data-majorId="69">文化教育</li>
+                        <li data-majorId="70">生化与药品</li>
+                        <li data-majorId="71">材料与能源</li>
+                        <li data-majorId="72">资源开发与测绘</li>
+                        <li data-majorId="73">环保、气象与安全</li>
+                        <li data-majorId="74">艺术设计传媒</li>
+                    </ul>
+                    <div class="major-content">
+                        <p class="title">土建 (56) <span>7个专业类，36个专科专业</span></p>
+                        <p class="title-s">建筑设计类 (5601)</p>
+                        <ul class="classification clear">
+                            <li data-majorId="560101">建筑设计技术</li>
+                            <li data-majorId="560102">建筑装饰工程技术</li>
+                            <li data-majorId="560103">中国古建筑工程技术</li>
+                            <li data-majorId="560104">室内设计技术</li>
+                            <li data-majorId="560105">环境艺术设计</li>
+                            <li data-majorId="560106">园林工程技术</li>
+                        </ul>
+                        <p class="title-s">城镇规划与管理类 (5602)</p>
+                        <ul class="classification clear">
+                            <li data-majorId="560201">城镇规划</li>
+                            <li data-majorId="560202">城市管理与检察</li>
+                            <li data-majorId="560203">城镇建设</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-change" id="art" style="display: none" data-class="2">
+                <ul class="box-option clear">
+                    <li class="active" data-option="1">艺考分数线</li>
+                </ul>
+                <div class="right-content" data-option="1">
+                    <ul class="input clear">
+                        <li class="menu">
+                            <span>请选择省份</span>
+                            <i></i>
+                            <div>
+                                <p>北京</p>
+                                <p>上海</p>
+                                <p>广州</p>
+                                <p>深圳</p>
+                                <p>湖南</p>
+                                <p>湖北</p>
+                                <p>浙江</p>
+                                <p>江苏</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>请选择年份</span>
+                            <i></i>
+                            <div>
+                                <p>2014</p>
+                                <p>2015</p>
+                                <p>2016</p>
+                                <p>2017</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>文/理科</span>
+                            <i></i>
+                            <div>
+                                <p>文科</p>
+                                <p>理科</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>请选择批次</span>
+                            <i></i>
+                            <div>
+                                <p>本科一批</p>
+                                <p>本科二批</p>
+                                <p>本科三批</p>
+                                <p>高职(专科)</p>
+                            </div>
+                        </li>
+                        <li class="btn">查询</li>
+                    </ul>
+                    <ul class="table-title clear">
+                        <li>院校名称</li>
+                        <li>生源地</li>
+                        <li>考生类别</li>
+                        <li>批次</li>
+                        <li>年份</li>
+                        <li>最高分</li>
+                        <li>平均分</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                    <ul class="table-content clear">
+                        <li>哈尔滨工业大学</li>
+                        <li>湖南</li>
+                        <li>理科</li>
+                        <li>本科一批</li>
+                        <li>2016</li>
+                        <li>620</li>
+                        <li>606</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-change" id="university" style="display: none" data-class="3">
+                <ul class="box-option clear">
+                    <li class="active" data-option="1">院校查询</li>
+                </ul>
+                <div class="right-content class4" data-option="1">
+                    <ul class="input clear">
+                        <li class="menu">
+                            <span>省份</span>
+                            <i></i>
+                            <div>
+                                <p>2014</p>
+                                <p>2015</p>
+                                <p>2016</p>
+                                <p>2017</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>院校分类</span>
+                            <i></i>
+                            <div>
+                                <p>文科</p>
+                                <p>理科</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>学历层次</span>
+                            <i></i>
+                            <div>
+                                <p>本科</p>
+                                <p>专科</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>办学性质</span>
+                            <i></i>
+                            <div>
+                                <p>本科一批</p>
+                                <p>本科二批</p>
+                                <p>本科三批</p>
+                                <p>高职(专科)</p>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <span>院校特色</span>
+                            <i></i>
+                            <div>
+                                <p>本科一批</p>
+                                <p>本科二批</p>
+                                <p>本科三批</p>
+                                <p>高职(专科)</p>
+                            </div>
+                        </li>
+                        <li class="btn">查询</li>
+                    </ul>
+                    <ul class="table-title clear">
+                        <li>院校名称</li>
+                        <li>所在地</li>
+                        <li>学历层次</li>
+                        <li>全国报名热度排名</li>
+                        <li>院校特色</li>
+                        <li>高校对比</li>
+                    </ul>
+                    <ul class="table-content clear" data-universityId="0">
+                        <li>哈尔滨工业大学</li>
+                        <li>哈尔滨</li>
+                        <li>本科</li>
+                        <li>23</li>
+                        <li>211</li>
+                        <li>加入对比</li>
+                    </ul>
+                    <ul class="table-content clear" data-universityId="1">
+                        <li>北京大学</li>
+                        <li>北京</li>
+                        <li>本科</li>
+                        <li>2</li>
+                        <li>985,211</li>
+                        <li>加入对比</li>
+                    </ul>
+                    <ul class="table-content clear" data-universityId="2">
+                        <li>清华大学</li>
+                        <li>北京</li>
+                        <li>本科</li>
+                        <li>1</li>
+                        <li>985,211</li>
+                        <li>加入对比</li>
+                    </ul>
+                    <ul class="table-content clear" data-universityId="3">
+                        <li>上海交通大学</li>
+                        <li>上海</li>
+                        <li>本科</li>
+                        <li>3</li>
+                        <li>985,211</li>
+                        <li>加入对比</li>
+                    </ul>
+                    <ul class="table-content clear" data-universityId="3">
+                        <li>香港中文大学</li>
+                        <li>香港</li>
+                        <li>本科</li>
+                        <li>4</li>
+                        <li>985,211</li>
+                        <li>加入对比</li>
+                    </ul>
+                <div class="contrast">
+                    <p class="title">院校对比</p>
+                    <ul class="contrast-content">
+                        <li data-universityId="1"><span>北京大学</span><i></i></li>
+                    </ul>
+                    <ul class="btn-box clear">
+                        <li>对比</li>
+                        <li>清空</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <!--错误提示-->
 <div class="error">
-    功能尚未开放
+
 </div>
 <!--footer-->
 <footer>

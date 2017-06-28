@@ -42,7 +42,7 @@ header{
   display: block;
   width: 100%;
   height: 100px;
-  min-width:1280px;
+  min-width:1480px;
 }
 .h-nav {
   display: block;
@@ -204,7 +204,7 @@ header{
 //footer
 footer{
   width:100%;
-  min-width: 1280px;
+  min-width: 1480px;
   margin-top:100px;
   border-top: 1px solid #e2e2e2;
   .content{
@@ -346,29 +346,79 @@ body{
           }
         }
       }
+      .box-option{
+        border-bottom:1px solid #21bf61;
+        margin:20px 40px 0 30px;
+        li{
+          height:36px;
+          line-height: 36px;
+          padding:0 15px;
+          font-size: 16px;
+          color:#21bf61;
+          float: left;
+          border-radius: 6px 6px 0 0;
+          cursor: pointer;
+          &.active{
+            background:#21bf61;
+            color:#fff;
+          }
+        }
+      }
       .right-content{
-        padding:20px 40px 20px 30px;
-        .box-option{
-          border-bottom:1px solid #21bf61;
-          li{
-            height:36px;
-            line-height: 36px;
-            padding:0 15px;
-            font-size: 16px;
-            color:#21bf61;
+        padding:0px 40px 0px 30px;
+        background: #fff;
+        .major-option{
+          margin-top: 20px;
+          >li{
             float: left;
-            border-radius: 6px 6px 0 0;
+            padding:0 14px;
+            color:#505050;
+            font-size: 16px;
+            margin-bottom: 30px;
             cursor: pointer;
+            &:hover{
+              color:#21bf61;
+            }
             &.active{
-              background:#21bf61;
-              color:#fff;
+              color:#21bf61;
+            }
+          }
+        }
+        .major-content{
+          margin-top:60px;
+          color: #505050;
+          .title{
+            font-size: 22px;
+            padding-left: 10px;
+            border-left:4px solid #f67834;
+            margin-bottom: 10px;
+            span{
+              color:#868686;
+              font-size: 14px;
+            }
+          }
+          .title-s{
+            background: #ececec;
+            line-height: 20px;
+            height: 20px;
+            font-size: 14px;
+            padding-left: 16px;
+            margin-bottom: 20px;
+          }
+          .classification{
+            padding-left: 12px;
+            li{
+              float: left;
+              padding:0px 16px 20px 4px;
+              color:#21bf61;
+              font-size: 16px;
             }
           }
         }
         .input{
           height:70px;
           border:1px solid #cecece;
-          margin-top:20px;
+          margin-top:10px;
           padding:20px;
           box-sizing: border-box;
           li{
@@ -388,7 +438,7 @@ body{
               font-family: "microsoft yahei";
             }
             &.menu{
-              margin-left:20px;
+              margin-right:20px;
               border:1px solid #cecece;
               height:26px;
               line-height: 28px;
@@ -407,6 +457,8 @@ body{
                 top:28px;
                 background: #fff;
                 display: none;
+                max-height:146px;
+                overflow-y: auto;
                 >p{
                   height:24px;
                   &:hover{
@@ -442,6 +494,178 @@ body{
             }
           }
         }
+        .table-title{
+          width: 900px;
+          background: #21bf61;
+          margin-top: 34px;
+          >li{
+            float: left;
+            width:125px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 16px;
+            color:#fff;
+            &:nth-child(1){
+              width:150px;
+            }
+          }
+        }
+        .table-content{
+          width: 900px;
+          >li{
+            float: left;
+            width:125px;
+            height: 56px;
+            line-height: 56px;
+            text-align: center;
+            font-size: 16px;
+            color:#505050;
+            box-sizing: border-box;
+            border-right:1px solid #cecece;
+            border-bottom:1px solid #cecece;
+            &:nth-child(1){
+              width:150px;
+              border-left: 1px solid #cecece;
+            }
+          }
+        }
+        &.class2{
+          display: none;
+          .table-title{
+            >li{
+              width:112px;
+              &:nth-child(1){
+                width:116px;
+              }
+            }
+          }
+          .table-content{
+            width: 900px;
+            >li{
+              width:112px;
+              &:nth-child(1){
+                width:116px;
+              }
+            }
+          }
+        }
+        &.class3{
+          .table-title{
+            >li{
+              width:179px;
+              &:nth-child(3){
+                width:178px;
+              }
+            }
+          }
+          .table-content{
+            width: 900px;
+            >li{
+              width:179px;
+              &:nth-child(3){
+                width:178px;
+              }
+            }
+          }
+        }
+        &.class4{
+          .table-title{
+            >li{
+              width:161px;
+              &:last-child{
+                width:95px;
+              }
+            }
+          }
+          .table-content{
+            width: 900px;
+            >li{
+              width:161px;
+              &:last-child{
+                width:95px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//加入对比
+#university{
+    position: relative;
+  .table-content{
+    li:last-child{
+      color:#21bf61;
+      cursor: pointer;
+    }
+  }
+  .contrast{
+    position:absolute;
+    width:140px;
+    box-sizing: border-box;
+    border:1px solid #d3d3d3;
+    right:-140px;
+    top:10px;
+    padding-top:60px;
+    .title{
+      width:140px;
+      height:50px;
+      color:#fff;
+      background: #525252;
+      line-height: 50px;
+      font-size: 16px;
+      position: absolute;
+      top:0;
+      left:0;
+      text-align: center;
+    }
+    .btn-box{
+      li{
+        float: left;
+        width:50px;
+        height:24px;
+        line-height: 24px;
+        color:#fff;
+        cursor: pointer;
+        text-align: center;
+        margin:5px 9.5px 10px 9.5px;
+        font-size: 14px;
+        &:nth-child(1){
+          background: #f8773d;
+        }
+        &:nth-child(2){
+          background: #b5b5b5;
+        }
+      }
+    }
+    .contrast-content{
+      >li{
+        font-size: 16px;
+        width:138px;
+        padding:10px;
+        box-sizing: border-box;
+        position: relative;
+        i{
+          display: block;
+          width:15px;
+          height:15px;
+          background: url(../img/cross.png);
+          position: absolute;
+          top:50%;
+          margin-top: -7.5px;
+          right:10px;
+          cursor: pointer;
+        }
+        span{
+          display: block;
+          max-width: 110px;
+          text-overflow : ellipsis;
+          white-space : nowrap;
+          overflow : hidden;
+        }
       }
     }
   }
@@ -462,4 +686,5 @@ body{
   font-family: "microsoft yahei";
   letter-spacing: .5px;
   opacity: 0;
+  display:none;
 }

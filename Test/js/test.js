@@ -17,8 +17,6 @@ var setSession;
 }();
 //载入session
 +function(){
-    console.log(session);
-    console.log(session!=null)
     if(session!=null&&session!=[]){
         console.log("载入存档");
         setSession=session.split(",")//将存档内容转化为数组
